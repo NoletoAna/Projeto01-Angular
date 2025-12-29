@@ -4,12 +4,12 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 
-import { Mail, LucideAngularModule, BookOpen, Lock } from 'lucide-angular';
+import { Mail, LucideAngularModule, BookOpen, Lock, LayoutDashboard, ArrowRightToLine, Library, Plus, Goal } from 'lucide-angular';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes), provideClientHydration(withEventReplay()),
-    importProvidersFrom(LucideAngularModule.pick({Mail, BookOpen, Lock})),
+    importProvidersFrom(LucideAngularModule.pick({Mail, BookOpen, Lock, LayoutDashboard, ArrowRightToLine, Library, Plus, Goal})),
   ]
 };

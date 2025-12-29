@@ -1,0 +1,10 @@
+<a [routerLink]="route" routerLinkActive="bg-rose-400 text-white hover:bg-rose-400 hover:text-white"
+    [routerLinkActiveOptions]="{ exact: true }" 
+    class=" text-gray-400 hover:bg-rose-200 hover:text-gray-500 flex gap-2 items-center p-3 rounded-2xl ">
+    <div class="w-10 shrink-0 flex items-center justify-center">
+        <ng-content></ng-content>
+    </div>
+    <div>
+        {{title}}
+    </div>
+</a>

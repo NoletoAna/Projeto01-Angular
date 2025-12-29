@@ -1,1 +1,27 @@
-<p>sidebar-component works!</p>
+<div class="max-w-85 bg-white h-dvh flex flex-col items-center border-e-2 border-e-gray-200 justify-between">
+    <div>
+        <div class="border-b-2 border-b-gray-200 w-full p-6">
+            <app-logo-component></app-logo-component>
+        </div>
+        <div class="p-5 w-full flex flex-col gap-3 items-center">
+            <app-nav-button-component route="dashboard" title="Dashboard">
+                <lucide-icon name="LayoutDashboard" size="25"></lucide-icon>
+            </app-nav-button-component>
+            <app-nav-button-component route="library" title="Biblioteca">
+                <lucide-icon name="library" size="25"></lucide-icon>
+            </app-nav-button-component>
+            <app-nav-button-component route="library" title="Adicionar Livro">
+                <lucide-icon name="Plus" size="25"></lucide-icon>
+            </app-nav-button-component>
+            <app-nav-button-component route="library" title="Metas">
+                <lucide-icon name="Goal" size="25"></lucide-icon>
+            </app-nav-button-component>
+        </div>
+    </div>
+    <div class="p-5 w-full flex flex-col gap-5 items-center">
+        <app-logged-user-component></app-logged-user-component>
+        <app-nav-button-component route="library" title="Sair">
+            <lucide-icon name="ArrowRightToLine" size="20"></lucide-icon>
+        </app-nav-button-component>
+    </div>
+</div>
